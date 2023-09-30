@@ -1,8 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
+import TopBar from './components/topBar/topBar';
+import Home from './pages/home/home';
+
 import './App.css';
 
 const  App = () =>{
-  return <h1>Blog-Website</h1>
+  return (
+    <>
+    <TopBar/>
+    <Home/>
+    </>
+  )
 }
 
 export default App;
