@@ -1,4 +1,5 @@
-import "./write.css";
+import React from "react";
+import "./writeBlog.css";
 
 const WriteBlog = ()=> {
   return (
