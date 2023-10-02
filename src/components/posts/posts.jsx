@@ -14,7 +14,7 @@ const Posts = () => {
   return (
     <div className="posts">
       {imgLink.map((img, idx) => (
-        <Post img={img} key={idx}/>
+        <Post img={img} index = {idx} key={idx}/>
       ))}
     </div>
   );

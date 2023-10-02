@@ -63,3 +63,18 @@
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
   }
+
+.view-btn{
+  color: white;
+  background-color: #ee6826;
+  border-radius: 5px;
+  border: none;
+  height: 4vh;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 5px;
+}  
+
+.view-btn:hover{
+  cursor: pointer;
+}

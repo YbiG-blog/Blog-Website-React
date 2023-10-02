@@ -1,28 +1,25 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./post.css";
 
-const Post = ({ img }) => {
+const Post = ({ img, index }) => {
+
+  const navigate = useNavigate();
   return (
     <div className="post">
       <img className="postImg" src={img} alt="" />
       <div className="postInfo">
         <div className="postCats">
           <span className="postCat">
-            <a className="a" to="/posts?cat=Music">
               #Life
-            </a>
           </span>
           <span className="postCat">
-            <a className="a" to="/posts?cat=Music">
             #Sport
-            </a>
           </span>
         </div>
         <span className="postTitle">
-          <a to="/post/abc" className="a">
             Lorem ipsum dolor sit amet.
-          </a>
         </span>
         <hr />
         <span className="postDate">1 hour ago</span>
@@ -33,6 +30,9 @@ const Post = ({ img }) => {
         fugiat, reprehenderit praesentium blanditiis quos cupiditate ratione
         atque, exercitationem quibusdam, reiciendis odio laboriosam?
       </p>
+      <button className="view-btn" onClick={()=>{
+        navigate(`/singlePost?index=${index}`);
+      }}>View</button>
     </div>
   );
 };

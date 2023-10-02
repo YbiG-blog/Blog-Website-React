@@ -22,6 +22,21 @@
 
 .headerTitleLarge{
     position: absolute;
-    top:20%;
+    top:22%;
     font-size: 100px;
+}
+
+
+@media screen and (max-width: 750px) {
+  .header{
+    height: 50vh;
+  }
+  .headerTitleSmall{
+    top:25%;
+ }
+ 
+ .headerTitleLarge{
+     top:30%;
+ }
+ 
 }
